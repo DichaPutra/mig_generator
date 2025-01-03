@@ -1,6 +1,2 @@
 # mig_generator
-# mig_generator
-# mig_generator
-# mig_generator
-# mig_generator
-# mig_generator
+untuk keperluan generate dokumentasi MIG
