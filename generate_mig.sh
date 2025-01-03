@@ -64,7 +64,7 @@ while IFS= read -r file; do
         file_size_kb_compare=$(echo "scale=3; $file_size_bytes_compare / 1024" | bc)
         formatted_file_size_compare="${file_size_kb_compare} KB"
     else
-        formatted_file_size_compare="N/A"
+        formatted_file_size_compare="0 KB"
     fi
 
     # Get file size in kilobytes (KB) for the base branch (release/production) with 3 decimal values
@@ -73,7 +73,7 @@ while IFS= read -r file; do
         file_size_kb_base=$(echo "scale=3; $file_size_bytes_base / 1024" | bc)
         formatted_file_size_base="${file_size_kb_base} KB"
     else
-        formatted_file_size_base="N/A"
+        formatted_file_size_base="0 KB"
     fi
 
     # Concatenate file path with filename for CSV output
